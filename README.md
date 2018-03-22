@@ -3,10 +3,10 @@ This is a CLI to query [api.magicthegathering.io](https://api.magicthegathering.
 
 #### Usage
 ```bash
-Usage: cards_cli [options]
-    -g, --group FIELDS               Fields for grouping. Comma separated value. Eg: set,rarity
+Usage: cards_cli [options]    
     -c, --colors FIELDS              Colors for filtering. Comma separated value. Eg: Blue,Red,White
     -l, --legalities FIELDS          Legality Formats for filtering. Comma separated value. Eg: "Commander,Legacy,Khans of Tarkir Block"
+    -g, --group FIELDS               Fields for grouping. Comma separated value. Eg: set,rarity
     -h, --help                       Show this help message
 ```
 
