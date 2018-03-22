@@ -21,13 +21,13 @@ class MagicTheGatheringAPI
   end
 
   # Get all cards
-  def all_cards
+  def all_cards(pages)
     cards_collection = []
     page = 1
     loop do
       cards_page = self.cards(page)
-      break if cards_page.empty?
       cards_collection += cards_page
+      break if cards_page.empty? || (pages ? page >= pages : false)
       page += 1
     end
     cards_collection

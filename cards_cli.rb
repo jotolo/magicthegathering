@@ -23,6 +23,10 @@ OptionParser.new do |parser|
     options[:group] = filters
   end
 
+  parser.on("-p", "--page COUNT", Integer, "Page amount to consume. Number") do |filters|
+    options[:pages] = filters
+  end
+
   parser.on("-h", "--help", "Show this help message") do
     puts parser
   end
@@ -30,7 +34,7 @@ end.parse!
 
 # Getting the collection from MTG API
 api_manager = MagicTheGatheringAPI.new('MTG')
-cards_collection = api_manager.all_cards
+cards_collection = api_manager.all_cards(options[:pages])
 
 # Filtering by legalities format
 if legality_options = options[:legalities]
