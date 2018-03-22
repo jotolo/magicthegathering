@@ -29,8 +29,11 @@ OptionParser.new do |parser|
 
   parser.on("-h", "--help", "Show this help message") do
     puts parser
+    exit
   end
 end.parse!
+
+
 
 # Getting the collection from MTG API
 api_manager = MagicTheGatheringAPI.new('MTG')
