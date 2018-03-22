@@ -21,3 +21,13 @@ ruby cards_cli.rb -l "Legacy,Khans of Tarkir Block"
 # Grouping all cards first by set and then by rarity. 
 ruby cards_cli.rb -g set,rarity
 ```
+
+#### Merging options
+```ruby
+# Return cards containing "Khans of Tarkir Block" in the format and grouped by set and then by rarity.
+ruby cards_cli.rb -l "Khans of Tarkir Block" -g set,rarity
+
+# Return cards containing "Khans of Tarkir Block" in the format, with color Red and grouped by rarity.
+ruby cards_cli.rb -l "Khans of Tarkir Block" -c Red -g rarity
+
+```
