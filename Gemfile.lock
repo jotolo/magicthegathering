@@ -11,7 +11,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  httparty
+  httparty (= 0.16.1)
 
 BUNDLED WITH
    1.16.1
