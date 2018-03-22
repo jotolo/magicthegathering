@@ -52,4 +52,4 @@ if group_options = options[:group]
   cards_collection = deep_group_by(cards_collection, group_options, 0)
 end
 
-puts cards_collection.inspect
+puts cards_collection.to_json

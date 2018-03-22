@@ -8,4 +8,8 @@ class Card
     @artist = fields['artist']
     @formats = fields['legalities']&.map{|x| x['format']}
   end
+
+  def to_json(options)
+    fields.to_json
+  end
 end
