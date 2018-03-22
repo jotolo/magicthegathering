@@ -32,3 +32,6 @@ ruby cards_cli.rb -l "Khans of Tarkir Block" -g set,rarity
 ruby cards_cli.rb -l "Khans of Tarkir Block" -c Red -g rarity -p 3
 
 ```
+
+#### Response Format
+The CLI tool answer is given in JSON format.
