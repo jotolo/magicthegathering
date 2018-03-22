@@ -26,7 +26,7 @@ class MagicTheGatheringAPI
     page = 1
     loop do
       cards_page = self.cards(page)
-      break if cards_page.empty? || page > 10 #TODO: remove this
+      break if cards_page.empty?
       cards_collection += cards_page
       page += 1
     end
